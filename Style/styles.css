@@ -44,7 +44,7 @@ header{
 } */
 /* Navbar Styles Start */
 .navbar-main{
-    /* max-width: 1060px; */
+    max-width: 1060px;
     display: flex;
     margin: 0 200px;
     justify-content: space-between;
@@ -127,5 +127,47 @@ header{
  @media screen and (max-width: 576px) {
     .hamburger-icon{
         display: block;
+        color: black;
+    }
+    .nav-items{
+        display: none;
+    }
+    /* .nav-title{
+        margin-right: 250px;
+    } */
+    .navbar-main{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .navbar-main{
+        flex-direction: row;
+    }
+    .banner-container{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .banner-description{
+        width: 70%;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .banner-title{
+        margin-left: 0;
+    }
+    .banner-container{
+        margin-left: 10px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .shape{
+        font-size: 2rem;
+    }
+    .btn-primary,
+    .btn-download{
+        width: 170px;
+        height: 54px;
+        margin-left: 5px;
     }
  }
