@@ -2,6 +2,7 @@
 body{
     font-family: "Inter", sans-serif;
     /* max-width: 1440px; */
+    margin: 0 auto;
     /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
 }
 *{
@@ -34,8 +35,6 @@ body{
 /* Header Styles Start */
 header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(8, 3, 3, 0.993) 100%);
-    /* max-width: 1440px; */
-    margin: 0 auto;
 }
 /* header{
     background-image: url(../images/developer.png);
@@ -46,11 +45,10 @@ header{
 /* Navbar Styles Start */
 .navbar-main{
     /* max-width: 1060px; */
-    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
+    margin: 0 200px;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 60px;
 }
 .nav-title{
@@ -68,6 +66,10 @@ header{
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
+.hamburger-icon{
+    color: white;
+    display: none;
+}
 .home{
     background: rgb(230, 83, 60);
     width: 80px;
@@ -80,13 +82,13 @@ header{
     text-align: center;
 }
 /* Banner Section Styles Start */
-.banner-section{
+.banner-container{
     display: flex;
-    margin-top: 100px;
     justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 200px;
 }
 .banner-content{
-    margin-left: 350px;
     max-width: 520px;
 }
 .banner-title{
@@ -119,5 +121,11 @@ header{
     margin-top: 30px;
 }
 .banner-img{
-    margin-right: 350px;
+    margin-right: 80px;
 }
+ /* Media Query for small device */
+ @media screen and (max-width: 576px) {
+    .hamburger-icon{
+        display: block;
+    }
+ }
